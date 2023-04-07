@@ -1,0 +1,37 @@
+How to setup the typscript on projects
+
+1. global setup typescript
+tsc --init 
+create simple typescript file
+
+2. generate node js package.json file
+npm init -y
+ doest ask two many question for yes or no 
+ 
+
+ 3. created two files that name is src and dist in our project
+ mkdir src dist
+
+ dist = distribution folder that hold that javascript file
+ src = source folder that hold that typescript file
+
+ added the link of javacript file on within the html script tag like thats
+ <script src ="./dist/index.html"></script>
+
+ and that configured the dist file on typescript config file
+ that contains output directory on line of 58
+    "outDir": "./dist/", 
+
+
+    source file command line for watch online file execution
+watchmode any changed in typescript that show
+    tsc -w
+
+
+    npm i lite-server that extension help to find package are available or not
+
+
+    just added this line on package.json
+    "start": "lite-server" 
+    if not install lite server
+    live the server using this command line npm start

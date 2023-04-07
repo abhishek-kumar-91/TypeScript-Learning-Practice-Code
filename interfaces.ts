@@ -12,12 +12,34 @@ interface User  {
    getCoupon(couponname: string): number //couponname is just a reference that take string value
 }
 
-const abhishek: User = {dbId: 22,email: "a@gmail.com", userId: 2211, startTrail: () =>{
+
+
+
+interface User{
+    githubToken: string
+}
+
+
+//most important for interview
+interface Admin extends User{
+role: "admin" | "TA" | "Learner"
+}
+
+
+
+
+
+
+const abhishek: User = {dbId: 22,email: "a@gmail.com", userId: 2211,githubToken: "as", startTrail: () =>{
     return "trail started"
 }, getCoupon: (name: "abhishek") =>{
     return 10
 }
 }
+
+
+
+
 
 abhishek.email = "c@gmail.com"
 
